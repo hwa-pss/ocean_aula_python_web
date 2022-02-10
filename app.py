@@ -23,5 +23,5 @@ def fim_requisicao(exc):
 def exibir_entradas():
     sql = 'SELECT titulo, texto FROM entradas ORDER BY id DESC'
     cur = g.bd.execute(sql)
-    entradas =
+    entradas = []
     return str(entradas)
